@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - EcoMarket</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="site-header">
+    <div class="header-container container">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>EcoMarket</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="sobre-nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="productos.html" class="action-btn" title="Buscar">🔍</a>
+        <a href="productos.html" class="action-btn" title="Carrito">
+          🛒 <span class="badge-count">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container section">
+    <h1 style="text-align: center; margin-bottom: 1rem; color: var(--primary-dark);">Ponte en Contacto</h1>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto; color: var(--text-muted);">
+      ¿Tienes alguna duda sobre nuestros productos ecológicos o deseas realizar una alianza comercial verde? Escríbenos y te responderemos en breve.
+    </p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: start;">
+      
+      <!-- Formulario Inteligente (Validación CSS :valid / :invalid) -->
+      <form class="contact-form" action="#" method="get" style="background: var(--white); padding: 2rem; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+        <h3 style="margin-bottom: 1.5rem; color: var(--primary-dark);">Envíanos un Mensaje</h3>
+        
+        <div class="form-group">
+          <label for="nombre" class="form-label">Nombre Completo *</label>
+          <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. Frank Rosas" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Correo Electrónico *</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje" class="form-label">Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+      </form>
+
+      <!-- Información y Mapa de Ubicación -->
+      <div>
+        <h3 style="margin-bottom: 1.5rem; color: var(--primary-dark);">Nuestra Ubicación</h3>
+        
+        <div style="margin-bottom: 1.5rem; overflow: hidden; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+          <img src="../img/icons/map.svg" alt="Mapa de Ubicación EcoMarket" style="width: 100%; display: block;">
+        </div>
+
+        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <p><strong>📍 Dirección:</strong> Calle Sostenible #123, Zona Verde</p>
+          <p><strong>📞 Teléfono:</strong> +57 (607) 654-3210</p>
+          <p><strong>✉️ Email:</strong> hola@ecomarket.co</p>
+          <p><strong>🕒 Horario:</strong> Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+          
+          <div style="margin-top: 1.5rem;">
+            <strong style="display: block; margin-bottom: 0.5rem;">Síguenos en Redes Sociales:</strong>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="#" class="social-icon" title="Instagram">📷</a>
+              <a href="#" class="social-icon" title="Facebook">📘</a>
+              <a href="#" class="social-icon" title="Twitter">🐦</a>
+              <a href="#" class="social-icon" title="LinkedIn">💼</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>EcoMarket</h4>
+        <p>Tu plataforma de confianza para un consumo consciente.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Legales</h4>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto & Redes</h4>
+        <p>Email: contacto@ecomarket.co</p>
+        <p>Teléfono: +57 (607) 654-3210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

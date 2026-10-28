@@ -1,0 +1,311 @@
+/* ==========================================================================
+   EcoMarket - components.css
+   Tarjetas, Botones, Filtros, Barra de Búsqueda, Formularios y Paginación
+   ========================================================================== */
+
+/* Tarjeta de Producto */
+.product-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-normal);
+}
+
+.product-img-wrap {
+  position: relative;
+  padding-top: 75%; /* Aspect Ratio 4:3 */
+  overflow: hidden;
+  background-color: var(--primary-light);
+}
+
+.product-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.product-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+/* Badges y Etiquetas */
+.badge-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.badge-stock {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.badge-out {
+  background-color: var(--danger-color);
+  color: var(--white);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-dark);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Botón Favoritos Interactivo (CSS Puro con Checkbox Hack o :active) */
+.fav-checkbox {
+  display: none;
+}
+
+.btn-fav {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ccc;
+  transition: var(--transition-fast);
+
+  /* Evitar selección de texto */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.fav-checkbox:checked + .btn-fav,
+.btn-fav:active {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  background-color: #fceae8;
+}
+
+/* Barra de Búsqueda */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Componente de Filtros */
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 0.3rem;
+}
+
+.filter-list li {
+  margin-bottom: 0.5rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.range-slider {
+  width: 100%;
+  accent-color: var(--primary-color);
+}
+
+/* Paginación Visual */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.page-item {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  font-weight: 600;
+}
+
+.page-item.active,
+.page-item:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+/* Formulario Inteligente y Validación Visual (:valid / :invalid) */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition-fast);
+  background-color: var(--white);
+}
+
+/* Validación con CSS Puro */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* Borde verde para campos válidos cuando el usuario ha interactuado */
+.form-input:not(:placeholder-shown):valid,
+.form-textarea:not(:placeholder-shown):valid {
+  border-color: var(--success-color);
+  background-color: #f2fef6;
+}
+
+/* Borde rojo para campos inválidos cuando no están vacíos */
+.form-input:not(:placeholder-shown):invalid,
+.form-textarea:not(:placeholder-shown):invalid {
+  border-color: var(--danger-color);
+  background-color: #fdf2f2;
+}
+
+/* Carrusel CSS de Testimonios */
+.testimonial-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+  min-width: 280px;
+  max-width: 350px;
+  flex: 0 0 100%;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  scroll-snap-align: center;
+  border: 1px solid var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #f1c40f;
+  margin-bottom: 0.5rem;
+}

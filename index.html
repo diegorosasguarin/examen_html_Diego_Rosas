@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket - Tienda de Productos Ecológicos y Sostenibles</title>
+  <!-- Estilos CSS Modulares -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="site-header">
+    <div class="header-container container">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>EcoMarket</span>
+      </a>
+
+      <!-- Menú Responsivo sin JS (Checkbox Hack) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="views/productos.html" class="nav-link">Productos</a>
+        <a href="views/sobre-nosotros.html" class="nav-link">Nosotros</a>
+        <a href="views/contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="views/productos.html" class="action-btn" title="Buscar">🔍</a>
+        <a href="views/productos.html" class="action-btn" title="Carrito">
+          🛒 <span class="badge-count">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Principal / Hero -->
+  <section class="hero">
+    <div class="hero-content animate-fade-in">
+      <h1 class="hero-title">Compra responsable, vive sostenible</h1>
+      <p class="hero-subtitle">Descubre nuestra selección exclusiva de productos ecológicos, reutilizables y éticos para cuidar de ti y del planeta.</p>
+      <a href="views/productos.html" class="btn btn-primary">Explorar productos</a>
+    </div>
+  </section>
+
+  <!-- Productos Destacados -->
+  <main class="container section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Productos Destacados</h2>
+    
+    <div class="products-grid grid-3">
+      <!-- Tarjeta 1 -->
+      <article class="product-card">
+        <span class="badge-tag badge-stock">En Stock</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p1.jpeg" alt="Cepillo de Bambú">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Cepillo de Bambú Biodegradable</h3>
+          <p class="product-desc">Cerdas suaves con infusión de carbón activado y mango de bambú 100% compostable.</p>
+          <div class="product-footer">
+            <span class="product-price">$12.500</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="product-card">
+        <span class="badge-tag badge-stock">En Stock</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p3.jpeg" alt="Champú Sólido">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Champú Sólido Orgánico</h3>
+          <p class="product-desc">Fórmula natural concentrada sin sulfatos ni empaques plásticos. Rinde 80 lavados.</p>
+          <div class="product-footer">
+            <span class="product-price">$28.000</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="product-card">
+        <span class="badge-tag badge-stock">En Stock</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p2.jpeg" alt="Bolsa de Malla">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Bolsa Reutilizable de Malla</h3>
+          <p class="product-desc">Algodón orgánico resistente para compras de frutas y verduras sin residuos plásticos.</p>
+          <div class="product-footer">
+            <span class="product-price">$15.000</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 4 -->
+      <article class="product-card">
+        <span class="badge-tag badge-out">Agotado</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p6.jpeg" alt="Pajillas de Acero">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Pajillas de Acero Inoxidable</h3>
+          <p class="product-desc">Set de 4 pajillas reutilizables con cepillo limpiador y funda de lino ecológico.</p>
+          <div class="product-footer">
+            <span class="product-price">$18.000</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 5 -->
+      <article class="product-card">
+        <span class="badge-tag badge-stock">En Stock</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p9.jpeg" alt="Café Ecológico">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Café Orgánico de Comercio Justo</h3>
+          <p class="product-desc">Granos seleccionados cultivados bajo sombra en fincas sostenibles de Santander.</p>
+          <div class="product-footer">
+            <span class="product-price">$38.000</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta 6 -->
+      <article class="product-card">
+        <span class="badge-tag badge-stock">En Stock</span>
+        <div class="product-img-wrap">
+          <img src="img/products/p14.jpeg" alt="Envoltorio Cera">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Envoltorio de Cera de Abeja</h3>
+          <p class="product-desc">Reemplazo ecológico del vinipel para conservar alimentos frescos por más tiempo.</p>
+          <div class="product-footer">
+            <span class="product-price">$22.000</span>
+            <a href="views/productos.html" class="btn btn-outline">Ver más</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Pie de Página / Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>EcoMarket</h4>
+        <p>Tu plataforma de confianza para un consumo consciente y libre de residuos. Cuidemos el planeta juntos.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Legales</h4>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Envíos Verdes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto & Redes</h4>
+        <p>Email: contacto@ecomarket.co</p>
+        <p>Teléfono: +57 (607) 654-3210</p>
+        <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+          <a href="#" class="social-icon" title="Instagram">📷</a>
+          <a href="#" class="social-icon" title="Facebook">📘</a>
+          <a href="#" class="social-icon" title="LinkedIn">💼</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Todos los derechos reservados. Desarrollado con HTML5 y CSS3 puro.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

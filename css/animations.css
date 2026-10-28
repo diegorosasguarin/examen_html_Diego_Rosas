@@ -1,0 +1,59 @@
+/* ==========================================================================
+   EcoMarket - animations.css
+   Keyframes, Animaciones y Transiciones de Interactividad
+   ========================================================================== */
+
+/* Efecto Hover Elevar Tarjeta (Home y Catálogo) */
+.product-card:hover,
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Animación Scale para Redes Sociales aplicadas dimensiones*/
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  color: var(--white);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.25);
+  background-color: var(--primary-color);
+}
+
+/* Animación de Hover para Tarjetas de Testimonios */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--shadow-md);
+}
+
+/* Keyframes de Entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}

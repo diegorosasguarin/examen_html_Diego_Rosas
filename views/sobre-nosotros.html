@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros - EcoMarket</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- Encabezado / Header -->
+  <header class="site-header">
+    <div class="header-container container">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>EcoMarket</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="sobre-nosotros.html" class="nav-link active">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="productos.html" class="action-btn" title="Buscar">🔍</a>
+        <a href="productos.html" class="action-btn" title="Carrito">
+          🛒 <span class="badge-count">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="container section">
+
+    <!-- Sección Historia (Layout Flexbox) -->
+    <section style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-bottom: 4rem;">
+      <div style="flex: 1 1 400px;">
+        <h2 style="color: var(--primary-dark); font-size: 2.2rem;">Nuestra Historia</h2>
+        <p>EcoMarket nació de la convicción de que las decisiones diarias de compra tienen un impacto directo en el futuro del planeta. Lo que comenzó como una iniciativa local en Santander para eliminar los plásticos de un solo uso, hoy es una plataforma líder que conecta a consumidores conscientes con productores sustentables de todo el país.</p>
+        <p>Seleccionamos rigurosamente cada producto garantizando que cumpla con los más altos estándares de sostenibilidad, huella de carbono neutral y comercio ético.</p>
+      </div>
+      <div style="flex: 1 1 400px; text-align: center;">
+        <img src="../img/products/p17.jpeg" alt="Origen de EcoMarket" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); width: 100%; max-height: 350px; object-fit: cover;">
+      </div>
+    </section>
+
+    <!-- Principios Ecológicos -->
+    <section style="margin-bottom: 4rem;">
+      <h2 style="text-align: center; margin-bottom: 2.5rem;">Nuestros Principios Ecológicos</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🚫🥤</div>
+          <h3 style="font-size: 1.1rem; color: var(--primary-dark);">Sin Plástico</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Empaques 100% compostables y productos cero residuos para tu hogar.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤝🌱</div>
+          <h3 style="font-size: 1.1rem; color: var(--primary-dark);">Comercio Justo</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Garantizamos precios justos para nuestros artesanos y agricultores locales.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌍⚡</div>
+          <h3 style="font-size: 1.1rem; color: var(--primary-dark);">Carbono Neutro</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Compensamos la huella de carbono de cada envío sembrando árboles.</p>
+        </div>
+
+        <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">♻️✨</div>
+          <h3 style="font-size: 1.1rem; color: var(--primary-dark);">Materiales Reciclados</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Insumos reutilizables y duraderos diseñados para la economía circular.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonios (Carrusel CSS) -->
+    <section>
+      <h2 style="text-align: center; margin-bottom: 2rem;">Lo que Dicen Nuestros Clientes</h2>
+      
+      <div class="testimonial-carousel">
+        
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-style: italic; margin-bottom: 1rem;">"Increíble la calidad de los productos. Los cepillos de bambú y los envoltorios de cera cambiaron por completo el hábito en mi casa. ¡Excelente envío sostenible!"</p>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div style="width: 40px; height: 40px; background: var(--primary-color); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">CM</div>
+            <div>
+              <strong style="display: block; font-size: 0.95rem;">Camila Morales</strong>
+              <small style="color: var(--text-muted);">Bucaramanga</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-style: italic; margin-bottom: 1rem;">"Me encanta la transparencia de EcoMarket. Saber que cada producto promueve el comercio justo y que no hay plástico envuelto hace toda la diferencia."</p>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div style="width: 40px; height: 40px; background: var(--primary-dark); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">AO</div>
+            <div>
+              <strong style="display: block; font-size: 0.95rem;">Andrés Ortiz</strong>
+              <small style="color: var(--text-muted);">Piedecuesta</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-style: italic; margin-bottom: 1rem;">"El café orgánico y las bolsas de malla son infaltables. La página es súper intuitiva y el servicio al cliente es rápido y cordial."</p>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div style="width: 40px; height: 40px; background: var(--accent-earth); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">KD</div>
+            <div>
+              <strong style="display: block; font-size: 0.95rem;">Karen Durán</strong>
+              <small style="color: var(--text-muted);">Floridablanca</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>EcoMarket</h4>
+        <p>Tu plataforma de confianza para un consumo consciente.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Legales</h4>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto & Redes</h4>
+        <p>Email: contacto@ecomarket.co</p>
+        <p>Teléfono: +57 (607) 654-3210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Marca comprometida con la sostenibilidad.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
